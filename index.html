@@ -4,8 +4,33 @@
 <title>Leo's Portfolio</title>
 </head>
 <body>
-
 <h1>Leonardo Benitez's Portfolio</h1>
 <p>Welcome to my portfolio! I am currently working on developing this website. Please let me know if you experience any connection issues. You can reach me at leo@[this domain]</p>
+<h2>Some random shell functions I made:</h2>
+<p><code><pre>#Command help from cheat.sh. Takes the mysterious command as a string.
+cheat() {
+ if [[ -n $* ]]; then
+  curl cheat.sh/$*
+ else
+  curl cheat.sh
+ fi
+}
 
+#Add, commit, and push. Requires commit message as a string. Be careful with this one!
+gall(){
+ if [[ -n $* ]]; then
+  git add *; git commit -m $*; git push
+ else
+  print "Please use a commit message!"
+ fi
+}
+
+#Copy file from marge /tmp. Requires file name as a string.
+scm(){
+ if [[ -n $* ]]; then
+  scp marge.stuy.edu:/tmp/$* .
+ else
+  print "Give me files!"
+ fi
+}</pre></code></p>
 </body>
