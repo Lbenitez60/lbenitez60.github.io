@@ -23,14 +23,5 @@ gall(){
  else
   print "Please use a commit message!"
  fi
-}
-
-#Copy file from marge /tmp. Requires file name as a string.
-scm(){
- if [[ -n $* ]]; then
-  scp marge.stuy.edu:/tmp/$* .
- else
-  print "Give me files!"
- fi
 }</pre></code></p>
 </body>
