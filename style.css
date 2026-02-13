@@ -1,6 +1,6 @@
 body {
- background-color: lightblue;
+ background-color: #7ACFBB;
 }
-h1, h3, p {
- color: white;
+h1, h3, p, code {
+ color: #0F0C3F;
 }
